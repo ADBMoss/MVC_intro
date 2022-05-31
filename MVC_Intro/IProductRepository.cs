@@ -1,0 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+using MVC_Intro;
+
+namespace MVC_Intro.Models
+{
+    public interface IProductRepository
+    {
+        public IEnumerable<Product> GetAllProducts();
+    }
+}
