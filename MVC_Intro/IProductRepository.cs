@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MVC_Intro;
+using Testing.Models;
 
 namespace MVC_Intro.Models
 {
@@ -9,5 +10,9 @@ namespace MVC_Intro.Models
         public IEnumerable<Product> GetAllProducts();
         public Product GetProduct(int id);
         public void UpdateProduct(Product product);
+        public void InsertProduct(Product productToInsert);
+        public IEnumerable<Category> GetCategories();
+        public Product AssignCategory();
+        public void DeleteProduct(Product product);
     }
 }

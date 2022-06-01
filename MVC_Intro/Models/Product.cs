@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using Testing.Models;
+
 namespace MVC_Intro.Models
 {
     public class Product
@@ -13,5 +16,7 @@ namespace MVC_Intro.Models
         public int CategoryID { get; set; }
         public int OnSale { get; set; }
         public int StockLevel { get; set; }
+        public IEnumerable<Category> Categories { get; set; }
+
     }
 }
